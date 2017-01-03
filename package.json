@@ -1,0 +1,17 @@
+{
+  "name": "date-functions",
+  "version": "1.0.0",
+  "main": "build/index.js",
+  "repository": "https://github.com/wmartins/date-functions.git",
+  "author": "William Martins <wwwhmartins@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^18.1.0",
+    "rollup": "^0.39.2"
+  },
+  "scripts": {
+    "pretest": "npm run build",
+    "test": "jest",
+    "build": "rm -rf build ; mkdir build ; rollup -o build/index.js -f umd -n dfn src/index.js"
+  }
+}
